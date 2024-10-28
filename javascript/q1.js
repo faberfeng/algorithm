@@ -10,12 +10,13 @@ function findReliableNumberPosition(n) {
 
   while (count < n) {
     number++; // 增加数字
+    console.log(`位数:${number}`);
     // 检查当前数字是否包含数字 7
     if (!String(number).includes("7")) {
       count++; // 只有不包含 7 的数字才算靠谱的数字
+      console.log(count);
     }
   }
-
   return number; // 返回第 n 个靠谱的数字
 }
 
